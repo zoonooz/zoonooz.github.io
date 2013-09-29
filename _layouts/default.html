@@ -1,44 +1,57 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+      
+      <!--[if Internet Explorer]>
+      <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
+      <![endif]-->
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+      <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+      <link href="/css/style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.5.css" media="screen" />
+      
+    <title>ZOONREF</title>
+      
+      <script type="text/javascript" src="/js/jquery.js"></script>
+      <script type="text/javascript" src="/js/jquery.lightbox-0.5.js"></script>
+      <script type="text/javascript" src="/js/input_clear.js"></script>
+      
+      <!-- Lightbox -->
+      <script type="text/javascript">
+      $(function() {
+          $('.latest_gallery a').lightBox();
+      });
+      </script>
+      
+  </head>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <body id="home" >
+    <div id="container">
+      <div id="content">
 
-    </head>
-    <body>
+        <div id="header">
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+          <center>
+            <a href="/">
+              <img alt="SimpleTape" class="logo" src="/img/logo.png" />
+            </a>
+            <h2 class="site_title">ZOONREF</h2>
+            <div style="color: #bbb; font-size: 14px"><b> AMORNCHAI&nbsp; KANOKPULLWAD</b></div>
+            
+          </center>
 
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
         </div>
 
-    </body>
+        {{ content }}
+
+        <div id="footer">
+            &#169; ZOONREF 2013 All rights reserved.
+        </div>
+
+      </div>
+
+    </div>
+  </body>
 </html>
