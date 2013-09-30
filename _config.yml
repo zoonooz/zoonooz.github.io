@@ -3,3 +3,5 @@ markdown: redcarpet
 pygments: true
 
 permalink: /:categories/:title
+
+google_analytics: UA-44460572-1
