@@ -1,6 +1,6 @@
 name: ZOONOOZ | Portfolio
 markdown: redcarpet
-pygments: true
+highlighter: true
 
 permalink: /:categories/:title
 
