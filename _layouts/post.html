@@ -1,12 +1,26 @@
 ---
 layout: default
 ---
-<div class="main_content">
 
-    <center>
-    	<h1 class="title_work" style="color: #777">{{ page.title }}</h1>
-    </center>
-
-    {{ content }}
-
+<div class="row">
+    <div class="col-lg-12">
+    	<h2 class="">{{ page.title }}</h2>
+        <p class="subtitle">
+          {% for platform in page.platform %}
+            {% if platform == "android" %}
+            <span class="label label-success">
+            {% elsif platform == "ios" %}
+            <span class="label label-default">
+            {% elsif platform == "windows" %}
+            <span class="label label-primary">
+            {% endif %}
+              {{ platform }}</span>&nbsp;
+          {% endfor %}
+           ●
+          {{ page.date | date_to_string }}
+        </p>
+    </div>
+    <div class="col-lg-12 top-space">
+        <img class="img-responsive img-thumbnail" alt="{{ page.title }}" src="{{ page.image }}" />
+    </div>
 </div>

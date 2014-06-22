@@ -83,3 +83,13 @@ body {
 .subtitle {
   color: #ccc;
 }
+
+.post-link {
+  color: #555;
+}
+
+.post-link:hover {
+  text-decoration: none;
+}
+
+.top-space { margin-top:20px; }

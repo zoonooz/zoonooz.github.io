@@ -1,73 +1,42 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-      
-      <!--[if Internet Explorer]>
-      <link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" />
-      <![endif]-->
-      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
-      <link href="/css/reset.css" rel="stylesheet" type="text/css" />
-      <link href="/css/style.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.5.css" media="screen" />
-      <link rel="image_src" href="http://media.clickonf5.org/image/logo.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
     <title>ZOONREF</title>
-      
-      <script type="text/javascript" src="/js/jquery.js"></script>
-      <script type="text/javascript" src="/js/jquery.lightbox-0.5.js"></script>
-      <script type="text/javascript" src="/js/input_clear.js"></script>
-      <script type="text/javascript">
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-44460572-1']);
-		  _gaq.push(['_trackPageview']);
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+    <!-- Custom styles for this template -->
+    <link href="/css/main.css" rel="stylesheet">
 
-		</script>
-      
-      <!-- Lightbox -->
-      <script type="text/javascript">
-      $(function() {
-          $('.latest_gallery a').lightBox();
-      });
-      </script>
-      
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
-  <body id="home" >
-    <div id="container">
-      <div id="content">
+  <body>
 
-        <div id="header">
+    <div class="container">
+      
+      {{ content }}
 
-          <center>
-            <a href="/">
-              <img alt="SimpleTape" class="logo" src="/img/logo.png" />
-            </a>
-            <h2 class="site_title">ZOONREF</h2>
-            <div style="color: #bbb; font-size: 14px"><b>PORTFOLIO</b></div>
-            
-          </center>
+    </div> <!-- /container -->
 
-        </div>
 
-        {{ content }}
-
-        
-
-      </div>
-
-    </div>
-    <div id="foot">
-      <!-- <div id="footer">
-            &#169; ZOONREF 2013 All rights reserved.
-        </div> -->
-    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>
