@@ -80,6 +80,14 @@ body {
 }
 
 /* Custom */
+
+img {
+  height: auto;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .subtitle {
   color: #ccc;
 }
@@ -92,4 +100,4 @@ body {
   text-decoration: none;
 }
 
-.top-space { margin-top:20px; }
+.top-space { margin-top: 40px; }
