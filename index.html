@@ -18,7 +18,7 @@ title: ZOONREF
         <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
         <p class="subtitle">
           {% for platform in post.platform %}
-            {% if platform == "android" %}
+            {% if platform == "android" or platform == "line" %}
             <span class="label label-success">
             {% elsif platform == "ios" %}
             <span class="label label-default">
