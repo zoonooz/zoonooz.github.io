@@ -9,10 +9,12 @@ layout: default
       {% for platform in page.platform %}
         {% if platform == "android" %}
         <span class="label label-success">
-        {% elsif platform == "ios" %}
+        {% elsif platform == "ios" or platform == "osx" %}
         <span class="label label-default">
         {% elsif platform == "windows" %}
         <span class="label label-primary">
+        {% elsif platform == "line" %}
+        <span class="label label-line">
         {% endif %}
           {{ platform }}</span>&nbsp;
       {% endfor %}
