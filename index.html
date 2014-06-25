@@ -26,6 +26,8 @@ title: ZOONREF
             <span class="label label-primary">
             {% elsif platform == "line" %}
             <span class="label label-line">
+            {% elsif platform == "web" %}
+            <span class="label label-warning">
             {% endif %}
               {{ platform }}</span>&nbsp;
           {% endfor %}
