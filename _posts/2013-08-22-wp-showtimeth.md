@@ -3,9 +3,7 @@ layout: post
 title:  "Thailand Movie Showtime Windows Phone Application"
 date:   2013-08-22 20:29:07
 categories: portfolio
-thumbnail: /img/preview/showtimeth.png
 platform: windows
-image: /img/portfolio/showtimeth.jpg
 ---
 
 When I was using Nokia Lumia 520, I cannot find the app that can show movies showtime of my favorite cinema. So I made this app for that.

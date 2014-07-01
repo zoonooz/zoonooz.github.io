@@ -3,9 +3,7 @@ layout: post
 title:  "Blognone Reader Windows Phone Application"
 date:   2013-05-06 20:29:07
 categories: portfolio
-thumbnail: /img/preview/blognone.png
 platform: windows
-image: /img/portfolio/blognone.jpg
 ---
 
 [Blognone](https://www.blognone.com/) is a technology news website in Thailand that I like to read. After I got Nokia Lumia 520, I decided to learn this new platform, *Windows Phone*. This app is my first Windows Phone app.

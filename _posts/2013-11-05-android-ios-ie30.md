@@ -3,9 +3,7 @@ layout: post
 title:  "GlobalisingSG app for iPhone and Android"
 date:   2013-11-05 20:29:07
 categories: portfolio
-thumbnail: /img/preview/ie30.jpg
 platform: [android,ios]
-image: /img/portfolio/ie30.jpg
 ---
 
 I was working with one designer and one developer at Dezainwerkz to build these application for celebrate IE Singapore 30th Anniversary and tell about Singapore's globalisation journey.

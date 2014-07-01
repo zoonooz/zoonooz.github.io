@@ -31,6 +31,9 @@ title: ZOONREF
             {% endif %}
               {{ platform }}</span>&nbsp;
           {% endfor %}
+          {% for social in post.social %}
+            {{ social }}
+          {% endfor %}
            ●
           {{ post.date | date_to_string }}</p>
       </div>

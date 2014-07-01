@@ -20,6 +20,9 @@ layout: default
         {% endif %}
           {{ platform }}</span>&nbsp;
       {% endfor %}
+      {% for social in page.social %}
+        {{ social }}
+      {% endfor %}
        ●
       {{ page.date | date_to_string }}
     </p>

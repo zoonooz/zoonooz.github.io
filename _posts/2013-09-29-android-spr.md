@@ -3,9 +3,7 @@ layout: post
 title:  "Superrich Exchange Android Application"
 date:   2013-09-29 20:29:07
 categories: portfolio
-thumbnail: /img/preview/spr.png
 platform: android
-image: /img/portfolio/spr.jpg
 ---
 
 This app I made for Superrich as a freelance project. They need to redesign the old app that made in 2011.
