@@ -11,33 +11,47 @@ title: ZOONREF
   <p><a class="btn btn-lg btn-default" href="mailto:zoonref@gmail.com" role="button">Contact me</a></p>
 </div>
 
+<div class="row">
+  <div class="col-lg-12">
+    <ul id="content-tab" class="nav nav-tabs nav-justified" role="tablist">
+      <li class="active"><a href="#work" role="tab" data-toggle="tab">Work</a></li>
+      <li><a href="#blog" role="tab" data-toggle="tab">Blog</a></li>
+    </ul>
+  </div>
+</div>
+
 <div class="row marketing">
   <div class="col-lg-12">
-    {% for post in site.posts %}
-      <div>
-        <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
-        <p class="subtitle">
-          {% for platform in post.platform %}
-            {% if platform == "android" %}
-            <span class="label label-success">
-            {% elsif platform == "ios" or platform == "osx" %}
-            <span class="label label-default">
-            {% elsif platform == "windows" %}
-            <span class="label label-primary">
-            {% elsif platform == "line" %}
-            <span class="label label-line">
-            {% elsif platform == "web" %}
-            <span class="label label-warning">
-            {% endif %}
-              {{ platform }}</span>&nbsp;
-          {% endfor %}
-          {% for social in post.social %}
-            {{ social }}
-          {% endfor %}
-           ●
-          {{ post.date | date_to_string }}</p>
+    <div class="tab-content">
+      <div class="tab-pane active" id="work">
+        {% for post in site.posts %}
+          <div>
+            <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
+            <p class="subtitle">
+              {% for platform in post.platform %}
+                {% if platform == "android" %}
+                <span class="label label-success">
+                {% elsif platform == "ios" or platform == "osx" %}
+                <span class="label label-default">
+                {% elsif platform == "windows" %}
+                <span class="label label-primary">
+                {% elsif platform == "line" %}
+                <span class="label label-line">
+                {% elsif platform == "web" %}
+                <span class="label label-warning">
+                {% endif %}
+                  {{ platform }}</span>&nbsp;
+              {% endfor %}
+              {% for social in post.social %}
+                {{ social }}
+              {% endfor %}
+               ●
+              {{ post.date | date_to_string }}</p>
+          </div>
+          <br/>
+        {% endfor %}
       </div>
-      <br/>
-    {% endfor %}
+      <div class="tab-pane" id="blog">...</div>
+    </div>
   </div>
 </div>
