@@ -2,6 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 16px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -119,4 +120,22 @@ img {
     0% {-webkit-transform: scale(0.5, 0.5); opacity: 0.0;}
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(0.8, 0.8); opacity: 0.0;}
+}
+
+/* custom */
+h1 {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+h2 {
+  margin-top: 60px;
+}
+
+blockquote {
+  color: #AAA;
+}
+
+pre {
+  border: none;
 }
