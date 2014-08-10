@@ -21,7 +21,7 @@ So basically it is a small device that broadcasts a radio signal. But what is th
 
 Estimote Beacon broadcasts signal using [Bluetooth LE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and [iBeacon](https://developer.apple.com/ibeacon/) standard which is implement Bluetooth's Proximity sension specification. You can think of it as a someone that keep shouting **"Hey, I am here. My name is ..."** every second.
 
-Estimote Beacon broadcasts signal with the following data:
+Estimote Beacon broadcasts signal with the following significant data:
 
 ```
 Proximity UUID: B9407F30-F5F8-466E-AFF9-25556B57FE6D
@@ -60,7 +60,7 @@ The reason why I used `responseToSelector` function is because `requestAlwaysAut
 
 Then you have to add key `NSLocationAlwaysUsageDescription` in the **info.plist** file with the text value which user will see when alert dialog pop up.
 
-Dont forget to create `locationManager` as a instance property otherwise, the alert box will disappear bofore you can take any action, because the `locationManager` object get released at the end of the function.
+Do not forget to create `locationManager` as a instance property otherwise, the alert box will disappear before you can take any action, because the `locationManager` object get released at the end of the function.
 
 ### Area Definition
 
@@ -143,9 +143,9 @@ Then implement `ESTBeaconManager` delegate:
 }
 ```
 
-Method `startMonitoringForRegion:` is working even the app is in background state But it will not work if you close the app by slide it away in app switching mode.
+Method `startMonitoringForRegion:` is working even the app is in background state but it will not work if you close the app by slide it away in app switching mode.
 
-Now we will get notification when the phone is close to one of those 3 areas and also when exit the area (please note that the exit delegate will get called after 30 second). But wait, How can we know that we got into which area, A or B or C. The solution is we have to use another method that is `startRangingBeaconsInRegion:` but we will get new ploblem, this method does not support in background mode.
+Now we will get notification when the phone is close to one of those 3 areas and also when exit the area *(please note that the exit delegate will get called after 30 second)*. But wait, How can we know that we got into which area, A or B or C. The solution is we have to use another method that is `startRangingBeaconsInRegion:` but we will get new problem, this method does not support in background mode.
 
 The solution is we will use `startMonitoringForRegion:` first and after `beaconManager:didEnterRegion:` get called, we have 5 seconds that iOS allow the app to execute code in background. With that 5 seconds we will use `startRangingBeaconsInRegion:` to get which beacon device we are close to.
 
@@ -186,6 +186,6 @@ Now when the app is in the background or the phone is locked, we will get notifi
 ## Conclusion
 - - -
 
-With Estimote Device and iBeacon, we can use it to empower idea based on indoor location or proximity such as Retail Shop that will notify the promotion when you are close to the product or [Check-in app](https://github.com/panicinc/PunchClock).
+With Estimote Device and iBeacon, we can use it to empower ideas based on indoor location or proximity such as Retail Shop that will notify user about the promotion when you are close to the product or [Check-in app](https://github.com/panicinc/PunchClock).
 
-This is my first blog in English. I am still learning and practicing English so, if there is any mistake please forgive me.
+This is my first blog in English. I am still learning and practicing English, so if there is any mistake please forgive me.
