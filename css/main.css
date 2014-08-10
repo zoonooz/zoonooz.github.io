@@ -132,10 +132,20 @@ h2 {
   margin-top: 60px;
 }
 
+h3 {
+  margin-top: 40px;
+}
+
 blockquote {
   color: #AAA;
 }
 
 pre {
   border: none;
+  word-wrap: normal;
+}
+
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
 }
