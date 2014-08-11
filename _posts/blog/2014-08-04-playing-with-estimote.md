@@ -3,7 +3,7 @@ layout: post
 title:  "Playing with Estimote Beacon"
 date:   2014-08-04 20:29:07
 categories: blog
-tag: [swift]
+tag: [estimote,ibeacon,ios]
 ---
 
 I just got a new project which is using [Estimote](http://estimote.com/). I cannot write about the purpose of this app but I will write about what it is and example to use it.
