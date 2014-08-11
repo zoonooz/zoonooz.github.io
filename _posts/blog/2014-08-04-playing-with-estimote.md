@@ -19,7 +19,7 @@ I just got a new project which is using [Estimote](http://estimote.com/). I cann
 
 So basically it is a small device that broadcasts a radio signal. But what is that signal and how it works?
 
-Estimote Beacon broadcasts signal using [Bluetooth LE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and [iBeacon](https://developer.apple.com/ibeacon/) standard which is implement Bluetooth's Proximity sension specification. You can think of it as a someone that keep shouting **"Hey, I am here. My name is ..."** every second.
+Estimote Beacon broadcasts signal using [Bluetooth LE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and [iBeacon](https://developer.apple.com/ibeacon/) standard which is implement Bluetooth's Proximity sensing specification. You can think of it as a someone that keep shouting **"Hey, I am here. My name is ..."** every second.
 
 Estimote Beacon broadcasts signal with the following significant data:
 
@@ -47,7 +47,7 @@ We need to install [Estimote SDK](https://github.com/Estimote/iOS-SDK) to our pr
 
 ### Permission in iOS8
 
-After you create project and done setup, the first thing you need to do if you are going to support iOS8 is request permission to use location service due to policy changed. Add the following code to anywhere depends on when you want user to see alert dialog but need to call it before using any estimote function.
+After you create project and setup, the first thing you need to do if you are going to support iOS8 is request permission to use location service due to policy changed. Add the following code to anywhere depends on when you want user to see alert dialog but need to call it before using any estimote function.
 
 ```objc
 // request access to location
@@ -182,6 +182,10 @@ The delegate code will be like this:
 ```
 
 Now when the app is in the background or the phone is locked, we will get notification with the area name.
+
+<center>
+![image](/img/blog/estimote.jpg)
+</center>
 
 ## Conclusion
 - - -
