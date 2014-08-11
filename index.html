@@ -17,8 +17,12 @@ title: ZOONREF
 <div class="row">
   <div class="col-lg-12">
     <ul id="content-tab" class="nav nav-tabs nav-justified" role="tablist">
-      <li class="active"><a href="#work" role="tab" data-toggle="tab">Work</a></li>
-      <li><a href="#blog" role="tab" data-toggle="tab">Blog</a></li>
+      <li class="active">
+        <a href="#work" role="tab" data-toggle="tab">Work  <span class="badge">{{ site.categories.portfolio.size }}</span></a>
+      </li>
+      <li>
+        <a href="#blog" role="tab" data-toggle="tab">Blog  <span class="badge">{{ site.categories.blog.size }}</span></a>
+      </li>
     </ul>
   </div>
 </div>
