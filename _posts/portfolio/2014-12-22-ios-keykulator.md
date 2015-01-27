@@ -3,7 +3,7 @@ layout: post
 title:  "Keykulator"
 date:   2014-12-22 20:29:07
 categories: portfolio
-tag: [ios]
+platform: ios
 ---
 
 After Apple announced that they allow developers to create custom keyboard in iOS8, I and my friend [@Gary](http://twitter.com/iamglimy) wanted to do a simple project using that API. We came out with the simple idea of calculator keyboard and we call it "Keykulator".
