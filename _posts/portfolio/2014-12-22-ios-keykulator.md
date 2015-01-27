@@ -2,7 +2,7 @@
 layout: post
 title:  "Keykulator"
 date:   2014-12-22 20:29:07
-categories: blog
+categories: portfolio
 tag: [ios]
 ---
 
