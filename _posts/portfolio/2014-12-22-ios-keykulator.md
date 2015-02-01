@@ -16,4 +16,4 @@ While we was developing it, we alway think that Apple might reject our keyboard 
 
 Finally the keyboard got rejected and Apple said "Use of calculator in Today Widget is more appropriate".
 
-The keyboard was developed using Swift for UI and Text control and Objective-C for calculation. I opensource it on [Github]() and hope it useful to anyone who are trying to make keyboard.
+The keyboard was developed using Swift for UI and Text control and Objective-C for calculation. I opensource it on [Github](https://github.com/zoonooz/Keykulator) and hope it useful to anyone who are trying to make keyboard.
