@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 20px;
   font-size: 16px;
 }
@@ -33,24 +33,51 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container {
     max-width: 730px;
   }
-}
+}*/
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  background-color: white;
+  background-color: #2980B9;
+  color: white;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  text-shadow: 2px 2px #1F5F8A;
+  font-weight: 300;
 }
+
+.jumbotron h1 {
+  font-weight: 900;
+  text-shadow: 5px 5px #1F5F8A;
+}
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+  color: white;
+  text-shadow: none;
+  background-color: #1F5F8A;
+  border-color: #2C3E50;
+}
+
+.jumbotron .label {
+  text-shadow: none;
+}
+
+.jumbotron a {
+  color: white;
+  font-weight: bold;
+}
+
+.jumbotron img {
+  border: 7px solid #1F5F8A;
+  border-radius: 50%;
 }
 
 /* Supporting marketing content */
@@ -108,14 +135,14 @@ img {
 .label-line { background-color: white; color: #5cb85c; border: 1px solid #5cb85c }
 
 .circle-profile {
-    border: 1px solid #007AFF;
+    border: 2px solid #1F5F8A;
     -webkit-border-radius: 50%;
     height: 200px;
     width: 200px;
     position: relative;
     margin-top: -170px;
     -webkit-animation: pulsate 3s ease-out;
-    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-iteration-count: infinite;
     opacity: 0.0
 }
 @-webkit-keyframes pulsate {
@@ -150,4 +177,48 @@ pre {
 pre code {
     overflow-wrap: normal;
     white-space: pre;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+/* label */
+
+.label-default {
+  background-color: #2C3E50;
+}
+
+.label-warning {
+  background-color: #E74C3C;
+}
+
+.label-primary {
+  background-color: #54409E;
+}
+
+/* nav bar */
+.navbar {
+  border: none;
+  margin-bottom: 0px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #1F5F8A;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #1F5F8A;
+
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #1F5F8A;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #2980B9;
 }

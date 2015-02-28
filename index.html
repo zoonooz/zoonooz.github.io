@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: index
 title: ZOONREF
 ---
-
 
 <div class="jumbotron">
   <div>
@@ -10,68 +9,73 @@ title: ZOONREF
     <center><div class="circle-profile"></div></center>
   </div>
   <h1>ZOON</h1>
+  <br/>
   <p class="lead">I am Mobile Developer, <span class="label label-success">Android</span> <span class="label label-default">iOS</span> <span class="label label-primary">WindowsPhone</span> <br/>Develop mobile applications <a href="http://www.gomeeki.com/">@gomeeki</a> <br/>tweet <a href="http://www.twitter.com/zoonref">@zoonref</a> code <a href="http://github.com/zoonooz">@github</a> <br/>and looking for connections <a href="http://th.linkedin.com/in/zoonref/">@linkedin</a></p>
+  <br/>
   <p><a class="btn btn-lg btn-default" href="mailto:zoonref@gmail.com" role="button">Contact me</a></p>
 </div>
 
-<div class="row">
-  <div class="col-lg-12">
-    <ul id="content-tab" class="nav nav-tabs nav-justified" role="tablist">
-      <li class="active">
-        <a href="#work" role="tab" data-toggle="tab">Work  <span class="badge">{{ site.categories.portfolio.size }}</span></a>
-      </li>
-      <li>
-        <a href="#blog" role="tab" data-toggle="tab">Blog  <span class="badge">{{ site.categories.blog.size }}</span></a>
-      </li>
-    </ul>
-  </div>
-</div>
+<div class="container">
 
-<div class="row marketing">
-  <div class="col-lg-12">
-    <div class="tab-content">
-      <div class="tab-pane active" id="work">
-        {% for post in site.categories.portfolio %}
-          <div>
-            <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
-            <p class="subtitle">
-              {% for platform in post.platform %}
-                {% if platform == "android" %}
-                <span class="label label-success">
-                {% elsif platform == "ios" or platform == "osx" %}
-                <span class="label label-default">
-                {% elsif platform == "windows" %}
-                <span class="label label-primary">
-                {% elsif platform == "line" %}
-                <span class="label label-line">
-                {% elsif platform == "web" %}
-                <span class="label label-warning">
-                {% endif %}
-                  {{ platform }}</span>&nbsp;
-              {% endfor %}
-              {% for social in post.social %}
-                {{ social }}
-              {% endfor %}
-               ●
-              {{ post.date | date_to_string }}</p>
-          </div>
-          <br/>
-        {% endfor %}
-      </div>
-      <div class="tab-pane" id="blog">
-        {% for post in site.categories.blog %}
-          <div>
-            <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
-            <p class="subtitle">
-              {% for tag in post.tag %}
-                <span class="label label-default">{{ tag }}</span>&nbsp;
-              {% endfor %}
-               ●
-              {{ post.date | date_to_string }}</p>
-          </div>
-          <br/>
-        {% endfor %}
-      </div>
+  <!-- <div class="row">
+    <div class="col-lg-12">
+      <ul id="content-tab" class="nav nav-tabs nav-justified" role="tablist">
+        <li class="active">
+          <a href="#work" role="tab" data-toggle="tab">Work  <span class="badge">{{ site.categories.portfolio.size }}</span></a>
+        </li>
+        <li>
+          <a href="#blog" role="tab" data-toggle="tab">Blog  <span class="badge">{{ site.categories.blog.size }}</span></a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+
+  <div class="row marketing">
+    <div class="col-lg-12">
+      <!-- <div class="tab-content">
+        <div class="tab-pane active" id="work"> -->
+          {% for post in site.categories.portfolio %}
+            <div class="col-lg-6 card">
+              <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
+              <p class="subtitle">
+                {% for platform in post.platform %}
+                  {% if platform == "android" %}
+                  <span class="label label-success">
+                  {% elsif platform == "ios" or platform == "osx" %}
+                  <span class="label label-default">
+                  {% elsif platform == "windows" %}
+                  <span class="label label-primary">
+                  {% elsif platform == "line" %}
+                  <span class="label label-line">
+                  {% elsif platform == "web" %}
+                  <span class="label label-warning">
+                  {% endif %}
+                    {{ platform }}</span>&nbsp;
+                {% endfor %}
+                {% for social in post.social %}
+                  {{ social }}
+                {% endfor %}
+                 ●
+                {{ post.date | date_to_string }}</p>
+            </div>
+          {% endfor %}
+        <!-- </div>
+        <div class="tab-pane" id="blog">
+          {% for post in site.categories.blog %}
+            <div>
+              <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
+              <p class="subtitle">
+                {% for tag in post.tag %}
+                  <span class="label label-default">{{ tag }}</span>&nbsp;
+                {% endfor %}
+                 ●
+                {{ post.date | date_to_string }}</p>
+            </div>
+            <br/>
+          {% endfor %}
+        </div>
+      </div>-->
     </div>
   </div>
-</div>
+
+</div> <!-- /container -->
