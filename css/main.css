@@ -50,6 +50,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
   text-shadow: 2px 2px #1F5F8A;
   font-weight: 300;
+  margin-bottom: 0px;
 }
 
 .jumbotron h1 {
@@ -179,6 +180,16 @@ pre code {
     white-space: pre;
 }
 
+.latest-blog {
+  background-color: #EEE;
+}
+
+.index-h2 {
+  color: #aaa;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .card {
   margin-bottom: 30px;
 }
@@ -198,25 +209,29 @@ pre code {
 }
 
 /* nav bar */
+.navbg {
+  background-color: #1F5F8A;
+}
+
 .navbar {
   border: none;
   margin-bottom: 0px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: transparent;
   border-radius: 0px;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #1F5F8A;
+  color: white;
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #1F5F8A;
+  color: white;
 
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: #1F5F8A;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
