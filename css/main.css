@@ -194,6 +194,16 @@ pre code {
   margin-bottom: 30px;
 }
 
+.glyphicon {
+  top: 0px;
+}
+
+@media(max-width:767px){
+  .collapse-hide {
+      display: none !important;
+  }
+}
+
 /* label */
 
 .label-default {
