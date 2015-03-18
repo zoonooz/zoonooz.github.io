@@ -16,7 +16,7 @@ This blog will show you how to use `UIBezierPath` to make a dynamic polygon to b
 
 ## Create Path
 
-Let's create new swift playground file so we can see the updates when we made changes to the code and then create the custom `UIView` subclass to show our path in `drawRect()` method. Also put `import Darwin` for Math constants.
+Let's create new swift playground file so we can see the updates when we made changes to the code and then create the custom `UIView` subclass to show our path in `drawRect()` method.
 
 ```swift
 import UIKit
@@ -193,7 +193,7 @@ var startAngle = radianDelta + (radian / 2)
 var endAngle = radianDelta - (radian / 2)
 ```
 
-And when we use `addArcWithCenter()` again, it will automatically draw a line if current point is not in the curve of control point, so we do not need to draw straight line.
+Remove `path.addLineToPoint(point)` we will use `addArcWithCenter()` again. It will automatically draw a line if current point is not in the curve of control point, so we do not need to draw straight line.
 
 ```swift
 path.addArcWithCenter(controlPoint,
@@ -208,6 +208,23 @@ As you can see in the following image.
 <img width="300" src="/img/blog/polygon-imageview/7.jpg" />
 </center>
 
+See the result.
+
 <center>
 <img width="300" src="/img/blog/polygon-imageview/8.png" />
 </center>
+
+### 4. Apply mask to UIImageView
+
+Now we have a working polygon bezier path, next we need to create subclass of `UIView` to wrap the `UIImageView` inside and use the path to do a mask by following code.
+
+```swift
+let maskLayer = CAShapeLayer()
+maskLayer.path = path.CGPath
+imageView.layer.mask = maskLayer
+
+```
+
+## Conclusion
+
+We can use this to create many styles of `UIImageView` by change the value of `count` or even re-write the path to make star or what ever you want. Do not stick with the square only. You can see the complete source code at [Github](www.github.com).
