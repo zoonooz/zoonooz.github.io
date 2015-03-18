@@ -227,4 +227,4 @@ imageView.layer.mask = maskLayer
 
 ## Conclusion
 
-We can use this to create many styles of `UIImageView` by change the value of `count` or even re-write the path to make star or what ever you want. Do not stick with the square only. You can see the complete source code at [Github](www.github.com).
+We can use this to create many styles of `UIImageView` by change the value of `count` or even re-write the path to make star or what ever you want. Do not stick with the square only. You can see the complete source code at [Github](https://github.com/zoonooz/PolyImageView).
