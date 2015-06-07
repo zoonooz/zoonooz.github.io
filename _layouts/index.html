@@ -50,6 +50,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/blog">blog</a></li>
+              <li><a href="/portfolio">portfolio</a></li>
               <li><a href="mailto:zoonref@gmail.com">contact</a></li>
               <li class="collapse-hide"><a class="glyphicon glyphicon-signal" aria-hidden="true"></a></li>
             </ul>
@@ -58,7 +59,15 @@
       </nav>
     </div>
 
-    {{ content }}
+    <div id="wrap">
+      <div id="main">
+        {{ content }}
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="text-center">© 2015 Amornchai Kanokpullwad</p>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
