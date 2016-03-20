@@ -8,12 +8,10 @@ platform: windows
 
 When I was using Nokia Lumia 520, I cannot find the app that can show movies showtime of my favorite cinema. So I made this app for that.
 
-<center>
 ![image](/img/portfolio/showtimeth.jpg)
-</center>
+{: style="text-align: center"}
 
 The app can store the favorite cinemas for easier to get back.
 
-<center>
 [![Download Here](/img/download/windowsstore.png)](http://www.windowsphone.com/th-th/store/app/showtimeth/c408e332-926f-48d5-99db-a631c19c881a)
-</center>
+{: style="text-align: center"}

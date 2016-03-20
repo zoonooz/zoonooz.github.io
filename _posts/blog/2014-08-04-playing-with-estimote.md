@@ -11,9 +11,8 @@ I just got a new project which is using [Estimote](http://estimote.com/). I cann
 ## What is Estimote Beacon ?
 - - -
 
-<center>
 ![](http://media.tumblr.com/90987ae16391f981ab81d8ebe4d501a1/tumblr_inline_mqvtmyR50P1qz4rgp.png)
-</center>
+{: style="text-align: center"}
 
 >An Estimote Beacon is a small, wireless device, sometimes also called a 'mote'. When placed in a physical space, it broadcasts tiny radio signals to smart devices.  --- from estimote website
 
@@ -43,7 +42,7 @@ Let's start coding.
 
 ### Setup
 
-We need to install [Estimote SDK](https://github.com/Estimote/iOS-SDK) to our project. You can see the instruction from [here](https://github.com/Estimote/iOS-SDK#installation). 
+We need to install [Estimote SDK](https://github.com/Estimote/iOS-SDK) to our project. You can see the instruction from [here](https://github.com/Estimote/iOS-SDK#installation).
 
 ### Permission in iOS8
 
@@ -170,11 +169,11 @@ The delegate code will be like this:
             break;
         }
     }
-    
+
     if (detectedArea) {
         UILocalNotification *notification = [UILocalNotification new];
         notification.alertBody = [NSString stringWithFormat:@"You just enter %@. Do you want to make a landmark ?",detectedArea.name];
-        
+
         [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
         [self.beaconManager stopRangingBeaconsInRegion:self.beaconRegion];
     }
@@ -183,9 +182,8 @@ The delegate code will be like this:
 
 Now when the app is in the background or the phone is locked, we will get notification with the area name.
 
-<center>
 ![image](/img/blog/estimote.jpg)
-</center>
+{: style="text-align: center"}
 
 ## Conclusion
 - - -

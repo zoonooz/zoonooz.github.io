@@ -12,6 +12,5 @@ My first application here, after moved to Japan is [Himabu](http://www.himabu.co
 
 I use **RxJava** and **Kotlin** to build this application.
 
-<center>
 [![Download Here](/img/download/playstore.png)](https://play.google.com/store/apps/details?id=com.shuapps.himabu)
-</center>
+{: style="text-align: center"}

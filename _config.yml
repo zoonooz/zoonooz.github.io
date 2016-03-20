@@ -1,6 +1,6 @@
 name: ZOONOOZ | Portfolio
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 permalink: /:categories/:title
 

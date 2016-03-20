@@ -10,6 +10,5 @@ My company is doing marketing campaign for [Directbox](http://directcloud.net/) 
 
 The app made on OSX platform and use ```CIDetector``` class in standard OSX library to make this happen. It connected with external webcam for high resolution photo and Adruino for showing led indicator before it snap.
 
-<center>
 ![image](/img/portfolio/selfie.jpg)
-</center>
+{: style="text-align: center"}

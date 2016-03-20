@@ -8,6 +8,5 @@ platform: web
 
 [Coolmessenger](http://coolmessenger.biz/) is a website that show the information about product, price and has a simple user management setting page. They want us to redesign the website so my responsibility is translate design from designer into HTML, CSS and JavaScript.
 
-<center>
 ![image](/img/portfolio/gentoo.png)
-</center>
+{: style="text-align: center"}

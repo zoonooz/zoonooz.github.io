@@ -11,9 +11,8 @@ social: ['<iframe src="http://ghbtns.com/github-btn.html?user=zoonooz&repo=Andro
 
 Simple Receive NDEF message (SNEP) push from Android ICS in P2P mode with "Touch to Beam" function to ACS ACR 122u.
 
-<center>
 ![image](/img/portfolio/nfc.jpg)
-</center>
+{: style="text-align: center"}
 
   * It can receive only simple text NDEF message (more than 255 bytes)
   * Use Initiator mode to manual set LLCP connection parameters
@@ -28,4 +27,4 @@ Simple Receive NDEF message (SNEP) push from Android ICS in P2P mode with "Touch
 <br/>
 <br/>
 
-Thanks to nfcip-java [http://code.google.com/p/nfcip-java/](http://code.google.com/p/nfcip-java/) 
+Thanks to nfcip-java [http://code.google.com/p/nfcip-java/](http://code.google.com/p/nfcip-java/)

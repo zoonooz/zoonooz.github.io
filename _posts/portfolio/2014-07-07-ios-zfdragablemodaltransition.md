@@ -9,9 +9,8 @@ social: ['<iframe src="http://ghbtns.com/github-btn.html?user=zoonooz&repo=ZFDra
 
 While I was working on a side project, I needed to customise the way to present modal view controller in iOS to has nice animation and can be dismiss interactively by drag. So I created this repository and open source on github call [**ZFDragableModalTransition**](https://github.com/zoonooz/ZFDragableModalTransition).
 
-<center>
 ![image](https://raw.githubusercontent.com/zoonooz/ZFDragableModalTransition/master/Screenshot/ss.gif)
-</center>
+{: style="text-align: center"}
 
 You can use it like this
 
