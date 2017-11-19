@@ -13,7 +13,7 @@ SG TravelKaki is the app that provides you with important information on what tr
 ![image](/img/portfolio/ava1.jpg)
 {: style="text-align: center"}
 
-I worked with team at Dezainwerkz to make this app. Because there is a lot of content to display, I decided to use **XML** to store content, so designer can create it and share between both platform.
+I worked with team at Dezainwerkz to make this app. Because there is a lot of contents and pages to be displayed, We decided to use **XML** as the common data format and create parser in both platform to generate native UI and display.
 
 ![image](/img/portfolio/ava2.png)
 {: style="text-align: center"}

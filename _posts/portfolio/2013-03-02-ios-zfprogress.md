@@ -9,6 +9,5 @@ social: ['<iframe src="http://ghbtns.com/github-btn.html?user=zoonooz&repo=ZFPro
 
 While I was working on a project, I needed to customise the **UIProgressBar** in iOS to has color and style that match with the app. So I created this simple control.
 
-<center>
 ![image](/img/portfolio/zfprogress.jpg)
-</center>
+{: style="text-align: center"}

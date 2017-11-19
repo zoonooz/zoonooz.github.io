@@ -6,12 +6,12 @@ categories: portfolio
 platform: android
 ---
 
-This app I made for Superrich as a freelance project. They need to redesign the old app that made in 2011.
+I made this app for Superrich as a freelance project. They needed to redesign the old app that made in 2011.
 
 ![image](/img/portfolio/spr1.jpg)
 {: style="text-align: center"}
 
-The app show the money exchange rates for their customers. It also can calculate exchange for selected currency, show latest news and show the map and branches contact information.
+The app shows the money exchange rates for their customers. It also can calculate exchange for selected currency, show latest news and show the map and branches with contact information.
 
 ![image](/img/portfolio/spr2.jpg)
 {: style="text-align: center"}

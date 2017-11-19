@@ -6,7 +6,7 @@ categories: portfolio
 platform: ios
 ---
 
-After Apple announced that they allow developers to create custom keyboard in iOS8, I and my friend [@Gary](http://twitter.com/iamglimy) wanted to do a simple project using that API. We came out with the simple idea of calculator keyboard and we call it "Keykulator".
+After Apple announced that they allow developers to create custom keyboard in iOS8, I and my friend [@Gary](http://twitter.com/iamglimy) wanted to do a simple project using that API. We came up with the simple idea of calculator keyboard and call it "Keykulator".
 
 ![image](https://m1.behance.net/rendition/modules/148493749/disp/81ea7586156240bf8d0e185f7c7923a1.jpg)
 {: style="text-align: center"}

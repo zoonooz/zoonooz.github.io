@@ -11,10 +11,7 @@ platform: windows
 ![image](/img/portfolio/blognone1.jpg)
 {: style="text-align: center"}
 
-The app can view images, youtube video, code sniplets, nested comments and the user can share the news to social networks. There are feartures that available only in paid version such as app color, font size and live tile.
+The app can view images, youtube video, code sniplets, nested comments and the users can share the news to social networks. There are feartures that available only in paid version such as app themes, font sizes and live tile.
 
 ![image](/img/portfolio/blognone2.jpg)
-{: style="text-align: center"}
-
-[![Download Here](/img/download/windowsstore.png)](http://www.windowsphone.com/th-th/store/app/blognone-reader/2f532b17-abb6-4adc-87a0-6d6b28fb8c41)
 {: style="text-align: center"}

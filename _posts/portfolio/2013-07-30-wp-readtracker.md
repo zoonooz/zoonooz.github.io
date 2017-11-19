@@ -15,6 +15,3 @@ The app can capture your books cover and search isbn in the google to fetch the 
 
 ![image](/img/portfolio/readtracker2.jpg)
 {: style="text-align: center"}
-
-[![Download Here](/img/download/windowsstore.png)](http://www.windowsphone.com/th-th/store/app/readtracker/5eef1632-8347-427d-9150-7a56f21eaf39)
-{: style="text-align: center"}

@@ -21,7 +21,4 @@ The most challenging things are to make the app smooth as much as possible and u
 
 No other way, I have to trade the frame rates with the memory by using `NSCache` to hold references to those images. Best case, the app will be smooth as before, but in worst case, it will lag a lot. I personally want to use background thread to load image from disk, render and fade in to the cell to make the scrollig smooth, but it will not look realistic!
 
-I am woking with the team at Gomeeki to make this app better and more stable. The app is now in Australian store. You can check it out.
-
-[![Download Here](/img/download/itunestore.png)](https://itunes.apple.com/us/app/aisleone-afd/id1038268561?mt=8)
-{: style="text-align: center"}
+I was woking with the team at Gomeeki to make this app better and more stable.
