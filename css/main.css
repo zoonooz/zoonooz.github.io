@@ -145,6 +145,7 @@ img {
 
 .post-link {
   color: black;
+  max-lines: 2;
 }
 
 .post-link:hover {
@@ -210,6 +211,12 @@ pre code {
 
 .card {
   margin-bottom: 30px;
+  min-height: 90px;
+}
+
+.card:hover {
+  background-color: rgba(134, 134, 134, 0.1);
+  border-radius: 5px;
 }
 
 .glyphicon {

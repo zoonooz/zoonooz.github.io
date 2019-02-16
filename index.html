@@ -34,8 +34,9 @@ title: ZOONREF
         <h2 class="index-h2">Portfolio</h2>
       </div>
       {% for post in site.categories.portfolio %}
-        <div class="col-lg-6 card">
-          <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
+      <a href="{{ post.url }}">
+        <div class="col-lg-4 col-md-6 card">
+          <h4><p class="post-link">{{ post.title }}</p></h4>
           <p class="subtitle">
             {% for platform in post.platform %}
               {% if platform == "android" %}
@@ -57,6 +58,7 @@ title: ZOONREF
              ●
             {{ post.date | date_to_string }}</p>
         </div>
+      </a>
       {% endfor %}
     </div>
   </div>
@@ -73,8 +75,9 @@ title: ZOONREF
         </div>
 
         {% for post in site.categories.blog limit:2 %}
-          <div class="col-lg-6 card">
-            <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
+        <a href="{{ post.url }}">
+          <div class="col-lg-4 col-md-6 card">
+            <h4><p class="post-link">{{ post.title }}</p></h4>
             <p class="subtitle">
               {% for tag in post.tag %}
                 <span class="label label-default">{{ tag }}</span>&nbsp;
@@ -82,6 +85,7 @@ title: ZOONREF
                ●
               {{ post.date | date_to_string }}</p>
           </div>
+        </a>
         {% endfor %}
       </div>
     </div>
