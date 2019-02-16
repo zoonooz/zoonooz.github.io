@@ -3,7 +3,7 @@ layout: post
 title:  "BitcoinWatch for Pebble"
 date:   2016-08-25 00:00:00
 categories: portfolio
-platform: pebble
+platform: other
 ---
 
 After I got interested in Bitcoin and invested some of my money into it. I became addicted to checking the bitcoin price all the time.

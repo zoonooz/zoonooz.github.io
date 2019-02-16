@@ -10,7 +10,12 @@ title: ZOONREF
   </div>
   <h1>Hi!</h1>
   <br/>
-  <p class="lead">I am Amornchai, Mobile Application Developer living in Tokyo<br/>Currently I am developing mobile applications <a href="http://nanameue.jp/">@nanameue</a> <br/>tweet <a href="http://www.twitter.com/zoonref">@zoonref</a> code <a href="http://github.com/zoonooz">@github</a> <br/>and looking for connections <a href="http://th.linkedin.com/in/zoonref/">@linkedin</a></p>
+  <p class="lead">
+    I am Amornchai, Mobile Application Developer living in Singapore.
+    <br/>Previously lived in Tokyo and Bangkok.
+    <br/>Currently I am developing Android applications <a href="http://www.grab.com/">@Grab</a>
+    <br/>tweet <a href="http://www.twitter.com/zoonref">@zoonref</a> code <a href="http://github.com/zoonooz">@github</a> and looking for connections <a href="http://th.linkedin.com/in/zoonref/">@linkedin</a>
+  </p>
   <br/>
   <br/>
   <p>
@@ -21,6 +26,42 @@ title: ZOONREF
   <br/>
   <br/>
 </div>
+
+<div class="container">
+  <div class="row marketing">
+    <div class="col-lg-12">
+      <div class="col-lg-12">
+        <h2 class="index-h2">Portfolio</h2>
+      </div>
+      {% for post in site.categories.portfolio %}
+        <div class="col-lg-6 card">
+          <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
+          <p class="subtitle">
+            {% for platform in post.platform %}
+              {% if platform == "android" %}
+              <span class="label label-success">
+              {% elsif platform == "ios" or platform == "osx" %}
+              <span class="label label-default">
+              {% elsif platform == "windows" %}
+              <span class="label label-primary">
+              {% elsif platform == "other" %}
+              <span class="label label-info">
+              {% elsif platform == "web" %}
+              <span class="label label-warning">
+              {% endif %}
+                {{ platform }}</span>&nbsp;
+            {% endfor %}
+            {% for social in post.social %}
+              {{ social }}
+            {% endfor %}
+             ●
+            {{ post.date | date_to_string }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div> <!-- /container -->
 
 <div class="latest-blog">
   <div class="container">
@@ -46,42 +87,3 @@ title: ZOONREF
     </div>
   </div>
 </div>
-
-<div class="container">
-
-  <div class="row marketing">
-    <div class="col-lg-12">
-
-      <div class="col-lg-12">
-        <h2 class="index-h2">Portfolio</h2>
-      </div>
-
-      {% for post in site.categories.portfolio %}
-        <div class="col-lg-6 card">
-          <h4><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></h4>
-          <p class="subtitle">
-            {% for platform in post.platform %}
-              {% if platform == "android" %}
-              <span class="label label-success">
-              {% elsif platform == "ios" or platform == "osx" %}
-              <span class="label label-default">
-              {% elsif platform == "windows" %}
-              <span class="label label-primary">
-              {% elsif platform == "line" %}
-              <span class="label label-line">
-              {% elsif platform == "web" %}
-              <span class="label label-warning">
-              {% endif %}
-                {{ platform }}</span>&nbsp;
-            {% endfor %}
-            {% for social in post.social %}
-              {{ social }}
-            {% endfor %}
-             ●
-            {{ post.date | date_to_string }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-
-</div> <!-- /container -->
