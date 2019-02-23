@@ -107,6 +107,9 @@ body {
 .marketing p + h4 {
   margin-top: 28px;
 }
+.marketing a:hover {
+  text-decoration: none;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -146,10 +149,6 @@ img {
 .post-link {
   color: black;
   max-lines: 2;
-}
-
-.post-link:hover {
-  text-decoration: none;
 }
 
 .top-space { margin-top: 40px; }
@@ -212,6 +211,7 @@ pre code {
 .card {
   margin-bottom: 30px;
   min-height: 90px;
+  padding: 10px 15px 10px 15px;
 }
 
 .card:hover {

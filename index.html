@@ -59,6 +59,7 @@ title: ZOONREF
             {{ post.date | date_to_string }}</p>
         </div>
       </a>
+      {% cycle '', '', '<div class="clearfix visible-lg-block"></div>'  %}
       {% endfor %}
     </div>
   </div>
