@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Keykulator"
+title:  "🧮Keykulator"
 date:   2014-12-22 20:29:07
 categories: portfolio
 platform: ios

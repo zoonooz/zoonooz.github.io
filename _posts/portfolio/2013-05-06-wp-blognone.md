@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blognone Reader Windows Phone Application"
+title:  "📰Blognone Reader Windows Phone Application"
 date:   2013-05-06 20:29:07
 categories: portfolio
 platform: windows

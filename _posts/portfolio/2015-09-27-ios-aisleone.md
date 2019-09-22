@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AisleOne iPad Application"
+title:  "🛍️AisleOne iPad Application"
 date:   2015-09-27 20:29:07
 categories: portfolio
 platform: ios
@@ -12,10 +12,6 @@ platform: ios
 ![image](/img/portfolio/aisleone1.jpg)
 ![image](/img/portfolio/aisleone2.jpg)
 {: style="text-align: center"}
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eH_gPLy5J3E" frameborder="0" allowfullscreen></iframe>
-</center>
 
 The most challenging things are to make the app smooth as much as possible and use least memory. To make it smooth, I pre-load all the images into the memory (500+ images). But by doing that, the app got a lot of memory warnings and eventually crash :(
 

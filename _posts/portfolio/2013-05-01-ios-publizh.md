@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "E-Magazine Platform"
+title:  "📚E-Magazine Platform"
 date:   2013-05-01 20:29:07
 categories: portfolio
 thumbnail: /img/preview/publizh.png

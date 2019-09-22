@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nurse Note iPad Application"
+title:  "👩‍⚕️Nurse Note iPad Application"
 date:   2012-09-07 20:29:07
 categories: portfolio
 thumbnail: /img/preview/nursenote.png

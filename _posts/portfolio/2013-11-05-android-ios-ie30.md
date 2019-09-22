@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GlobalisingSG app for iPhone and Android"
+title:  "🌏GlobalisingSG app for iPhone and Android"
 date:   2013-11-05 20:29:07
 categories: portfolio
 platform: [android,ios]

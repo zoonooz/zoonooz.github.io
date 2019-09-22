@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Superrich Exchange Android Application"
+title:  "💱Superrich Exchange Android Application"
 date:   2013-09-29 20:29:07
 categories: portfolio
 platform: android

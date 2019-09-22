@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ngee Ann Openhouse 2014 Website"
+title:  "🎒Ngee Ann Openhouse 2014 Website"
 date:   2013-11-27 00:00:00
 categories: portfolio
 platform: web

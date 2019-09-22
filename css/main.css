@@ -1,11 +1,13 @@
 /* Space out content a bit */
 html, body {
   height: 100%;
+  background-color: rgb(44, 50, 56);
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  color: white;
 }
 
 #wrap {
@@ -44,7 +46,6 @@ body {
 /* Custom page footer */
 .footer {
   padding: 19px;
-  color: #777;
   height: 60px;
   margin-top: 100px;
   clear:both;
@@ -62,9 +63,8 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  background-color: white;
+  background-color: transparent;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 0px;
 }
 
@@ -86,18 +86,22 @@ body {
   border-radius: 30px;
 }
 
+.jumbotron .btn:hover {
+  background-color: rgb(63, 179, 125);
+}
+
 .jumbotron .label {
   text-shadow: none;
 }
 
 .jumbotron a {
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .jumbotron img {
-  border: 4px solid rgba(78, 78, 78, 0.2);
   border-radius: 50%;
+  margin-top: -235px;
 }
 
 /* Supporting marketing content */
@@ -147,7 +151,7 @@ img {
 }
 
 .post-link {
-  color: black;
+  color: white;
   max-lines: 2;
 }
 
@@ -155,20 +159,28 @@ img {
 .extra-top-space { margin-top: 70px; }
 
 .circle-profile {
-    border: 2px solid #4B72A0;
-    -webkit-border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    position: relative;
-    margin-top: -170px;
-    -webkit-animation: pulsate 3s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    opacity: 0.0
+  margin-top: 20px;
+  border: 2px solid rgb(63, 179, 125);
+  -webkit-border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
 }
+
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.5, 0.5); opacity: 0.0;}
+    0% {-webkit-transform: scale(1, 1); opacity: 0.0;}
     50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(0.8, 0.8); opacity: 0.0;}
+    100% {-webkit-transform: scale(1.4, 1.4); opacity: 0.0;}
+}
+
+a {
+  color: rgb(63, 179, 125);
+}
+
+a:hover {
+  color: rgb(63, 179, 125);
 }
 
 h1 {
@@ -215,7 +227,7 @@ pre code {
 }
 
 .card:hover {
-  background-color: rgba(134, 134, 134, 0.1);
+  background-color: rgba(134, 134, 134, 0.4);
   border-radius: 5px;
 }
 
@@ -260,7 +272,7 @@ pre code {
 }
 
 .navbar-brand {
-  color: black;
+  color: white;
 }
 
 .navbar-inverse .navbar-brand {
@@ -269,9 +281,18 @@ pre code {
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: black;
+  color: rgb(63, 179, 125);
 }
 
-.navbar-nav>li>a {
-  color: black;
+.navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: rgb(63, 179, 125);
 }

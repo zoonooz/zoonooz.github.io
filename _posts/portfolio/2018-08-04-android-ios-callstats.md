@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Callstats.io Libraries"
+title:  "🤳Callstats.io Libraries"
 date:   2018-08-04 00:00:00
 categories: portfolio
 platform: [android,ios]

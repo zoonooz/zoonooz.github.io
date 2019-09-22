@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ブクマ"
+title:  "🐻ブクマ"
 date:   2017-02-28 00:00:00
 categories: portfolio
 platform: android

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Selfie Photo Mirror for Directbox.Asia booth"
+title:  "📷Selfie Photo Mirror for Directbox.Asia booth"
 date:   2014-06-16 00:00:00
 categories: portfolio
 platform: osx

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SG TravelKaki app for iPhone and Android"
+title:  "🧳SG TravelKaki app for iPhone and Android"
 date:   2014-05-08 20:29:07
 categories: portfolio
 thumbnail: /img/preview/ie30.jpg

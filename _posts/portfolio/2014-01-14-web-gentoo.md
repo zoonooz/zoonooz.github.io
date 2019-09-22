@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coolmessenger Gentoo Website"
+title:  "🐧Coolmessenger Gentoo Website"
 date:   2014-01-14 00:00:00
 categories: portfolio
 platform: web
