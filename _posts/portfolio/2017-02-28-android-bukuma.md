@@ -6,7 +6,7 @@ categories: portfolio
 platform: android
 ---
 
-My second application in Japan is [ブクマ](http://xn--pck0dza.com/)(bukuma) for Android.
+My second application in Japan is [ブクマ](https://xn--pck0dza.com/)(bukuma) for Android.
 
 **ブクマ** is marketplace application that allows users to buy and sell books. Users can easily find the existing books by scanning ISBN or easily create a new one in the app.  They can keep track of ongoing transactions, the status of delivery, built-in chat to chat with seller or buyer and review system to help decide.
 

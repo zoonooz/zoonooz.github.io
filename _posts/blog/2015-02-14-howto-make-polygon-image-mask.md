@@ -178,7 +178,7 @@ let controlPoint = CGPoint(
 )
 ```
 
-Also we need to know radian of the point that touch the small circle by use `atan2` function. The function take 2 arguments which is distance of point y and x to the center of circle and return the radian. You can read more about it at [http://en.wikipedia.org/wiki/Atan2](http://en.wikipedia.org/wiki/Atan2)
+Also we need to know radian of the point that touch the small circle by use `atan2` function. The function take 2 arguments which is distance of point y and x to the center of circle and return the radian. You can read more about it at [https://en.wikipedia.org/wiki/Atan2](https://en.wikipedia.org/wiki/Atan2)
 
 ```swift
 let deltaY = point.y - controlPoint.y

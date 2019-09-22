@@ -6,7 +6,7 @@ categories: portfolio
 platform: android
 ---
 
-My first application here in Japan is [Himabu](http://www.himabu.com) for Android. I was working as an Android developer at [Nanameue](http://nanameue.jp/) to create this application which already exists in the iOS Appstore.
+My first application here in Japan is [Himabu](https://www.himabu.com) for Android. I was working as an Android developer at [Nanameue](https://nanameue.jp/) to create this application which already exists in the iOS Appstore.
 
 **Himabu** is the social application that focuses on students. We want them use their free times to communicate, make new friends and have fun with other students around Japan. Students can create a group, chat, call or post something to public timeline.
 

@@ -6,19 +6,19 @@ categories: blog
 tag: [estimote,ibeacon,ios]
 ---
 
-I just got a new project which is using [Estimote](http://estimote.com/). I cannot write about the purpose of this app but I will write about what it is and example to use it.
+I just got a new project which is using [Estimote](https://estimote.com/). I cannot write about the purpose of this app but I will write about what it is and example to use it.
 
 ## What is Estimote Beacon ?
 - - -
 
-![](http://media.tumblr.com/90987ae16391f981ab81d8ebe4d501a1/tumblr_inline_mqvtmyR50P1qz4rgp.png)
+![](https://media.tumblr.com/90987ae16391f981ab81d8ebe4d501a1/tumblr_inline_mqvtmyR50P1qz4rgp.png)
 {: style="text-align: center"}
 
 >An Estimote Beacon is a small, wireless device, sometimes also called a 'mote'. When placed in a physical space, it broadcasts tiny radio signals to smart devices.  --- from estimote website
 
 So basically it is a small device that broadcasts a radio signal. But what is that signal and how does it work?
 
-Estimote Beacon broadcasts signal using [Bluetooth LE](http://en.wikipedia.org/wiki/Bluetooth_low_energy) and [iBeacon](https://developer.apple.com/ibeacon/) standard which is implement using Bluetooth's Proximity sensing specification. You can think of it as a someone who keeps shouting **"Hey, I am here. My name is ..."** every second.
+Estimote Beacon broadcasts signal using [Bluetooth LE](https://en.wikipedia.org/wiki/Bluetooth_low_energy) and [iBeacon](https://developer.apple.com/ibeacon/) standard which is implement using Bluetooth's Proximity sensing specification. You can think of it as a someone who keeps shouting **"Hey, I am here. My name is ..."** every second.
 
 Estimote Beacon broadcasts signal with the following significant data:
 
