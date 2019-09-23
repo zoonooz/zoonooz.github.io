@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "🎓Himabu"
+title:  "🎓ひま部"
 date:   2016-01-18 00:00:00
 categories: portfolio
 platform: android

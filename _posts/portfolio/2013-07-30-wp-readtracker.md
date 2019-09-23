@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "🔖Read Tracker Windows Phone Application"
+title:  "🔖Read Tracker"
 date:   2013-07-30 20:29:07
 categories: portfolio
 platform: windows
