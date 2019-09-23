@@ -81,13 +81,14 @@ body {
   font-size: 21px;
   text-shadow: none;
   font-weight: normal;
-  background-color: transparent;
-  border: solid 1px;
+  background-color: rgb(63, 179, 125);
+  border: none;
   border-radius: 30px;
+  color: white;
 }
 
 .jumbotron .btn:hover {
-  background-color: rgb(63, 179, 125);
+  background-color: rgb(67, 143, 107);
 }
 
 .jumbotron .label {
@@ -161,18 +162,27 @@ img {
 .circle-profile {
   margin-top: 20px;
   border: 2px solid rgb(63, 179, 125);
+  border-radius: 50%;
   -webkit-border-radius: 50%;
   height: 200px;
   width: 200px;
+  animation: pulsate 3s ease-out;
   -webkit-animation: pulsate 3s ease-out;
+  animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   opacity: 0.0
 }
 
+@keyframes pulsate {
+  0% { transform: scale(1, 1); opacity: 0.0; }
+  50% { opacity: 1.0; }
+  100% { transform: scale(1.4, 1.4); opacity: 0.0; }
+}
+
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(1, 1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.4, 1.4); opacity: 0.0;}
+  0% {-webkit-transform: scale(1, 1); opacity: 0.0; }
+  50% { opacity: 1.0; }
+  100% {-webkit-transform: scale(1.4, 1.4); opacity: 0.0; }
 }
 
 a {

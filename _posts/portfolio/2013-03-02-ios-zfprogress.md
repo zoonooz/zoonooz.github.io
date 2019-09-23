@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Custom Progress bar"
+title:  "📱Custom Progress bar"
 date:   2013-02-03 20:29:07
 categories: portfolio
 platform: ios

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "🦙Himabu for Desktop"
+title:  "🎓Himabu for Desktop"
 date:   2017-11-26 00:00:00
 categories: portfolio
 platform: other

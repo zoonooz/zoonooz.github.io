@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to make polygon image mask"
+title:  "✡️How to make polygon image mask"
 date:   2015-02-14 20:29:07
 categories: blog
 tag: [swift,ios]

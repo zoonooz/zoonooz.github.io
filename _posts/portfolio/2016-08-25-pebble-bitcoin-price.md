@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "₿BitcoinWatch for Pebble"
+title:  "⌚BitcoinWatch for Pebble"
 date:   2016-08-25 00:00:00
 categories: portfolio
 platform: other
