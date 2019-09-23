@@ -78,6 +78,7 @@ body {
 
 .jumbotron .btn {
   padding: 14px 24px;
+  margin: 8px;
   font-size: 21px;
   text-shadow: none;
   font-weight: normal;
@@ -170,7 +171,7 @@ img {
   -webkit-animation: pulsate 3s ease-out;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
-  opacity: 0.0
+  opacity: 0.0;
 }
 
 @keyframes pulsate {
@@ -180,9 +181,36 @@ img {
 }
 
 @-webkit-keyframes pulsate {
-  0% {-webkit-transform: scale(1, 1); opacity: 0.0; }
+  0% { -webkit-transform: scale(1, 1); opacity: 0.0; }
   50% { opacity: 1.0; }
-  100% {-webkit-transform: scale(1.4, 1.4); opacity: 0.0; }
+  100% { -webkit-transform: scale(1.4, 1.4); opacity: 0.0; }
+}
+
+.hello-container {
+  height: 64px;
+  overflow: hidden;
+}
+
+.hello > div {
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+.hello {
+  animation: hello 18s ease-in-out infinite;
+}
+
+@keyframes hello {
+  0% { margin-top: -360px; opacity: 1.0; }
+  20% { margin-top: -360px; opacity: 1.0; }
+  25% { margin-top: -300px; opacity: 0.0; }
+  30% { margin-top: -240px; opacity: 1.0; }
+  50% { margin-top: -240px; opacity: 1.0; }
+  55% { margin-top: -180px; opacity: 0.0; }
+  60% { margin-top: -120px; opacity: 1.0; }
+  80% { margin-top: -120px; opacity: 1.0; }
+  85% { margin-top: -60px; opacity: 0.0; }
+  90% { margin-top: 0px; opacity: 1.0; }
 }
 
 a {
