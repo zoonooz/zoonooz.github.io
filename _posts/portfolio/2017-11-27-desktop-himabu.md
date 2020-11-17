@@ -6,7 +6,7 @@ categories: portfolio
 platform: other
 ---
 
-Because I was doing social network application, to give the users full access to the service is to make the application available in all platforms as many as possible. As [Himabu](https://www.himabu.com) is already available in iOS and Android, the next platform has to be desktop if we are talking about communication application. I decided to share the idea in the meeting and it turns out that we did not have enough resource and people to do it. I used my free time in the weekends to create this prototype and it is working really well.
+When I was developing [Himabu](android-himabu), I would like to give the users full access to the service in many platforms as possible. As Himabu was already available in iOS and Android, I decided to create this in my free times as the company did not have enough resource to do it. Eventhough the company did not release the app to the public users, it worked pretty well internally and helped reduce a lot of customer support team effort when the team wants to chat with the users.
 
 ![image](/img/portfolio/himabu-desktop.png)
 {: style="text-align: center"}
