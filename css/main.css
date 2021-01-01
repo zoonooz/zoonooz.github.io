@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   background-color: rgb(44, 50, 56);
+  background: linear-gradient(90deg, rgba(56,64,71,1) 0%, rgba(44,50,56,1) 78%);
 }
 
 body {
@@ -148,7 +149,7 @@ img {
 
 .subtitle {
   color: #aaa;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -280,6 +281,10 @@ pre code {
 }
 
 /* label */
+
+.label {
+  border-radius: 10px;
+}
 
 .label-default {
   background-color: #2C3E50;
