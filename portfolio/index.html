@@ -11,7 +11,7 @@ title: ZOONREF
         <h2 class="index-h2">Portfolio</h2>
       </div>
       {% for post in site.categories.portfolio %}
-      <a href="{{ post.url }}">
+        <a href="{{ post.url }}">
           <div class="col-lg-4 col-md-6 card">
             <h4><p class="post-link">{{ post.title }}</p></h4>
             <p class="subtitle">
@@ -36,6 +36,7 @@ title: ZOONREF
               {{ post.date | date_to_string }}</p>
           </div>
         </a>
+      {% cycle '', '', '<div class="clearfix visible-lg-block"></div>'  %}
       {% endfor %}
     </div>
   </div>
