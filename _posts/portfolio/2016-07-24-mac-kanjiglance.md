@@ -4,6 +4,7 @@ title:  "㊗️KanjiGlance for Mac"
 date:   2016-07-24 00:00:00
 categories: portfolio
 platform: mac
+skill: [swift]
 ---
 
 When I was living in Japan, I wanted to learn Japanese and remember the hardest part of the language, **Kanji!**.

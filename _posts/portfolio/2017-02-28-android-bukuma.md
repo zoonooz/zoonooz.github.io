@@ -4,6 +4,7 @@ title:  "🐻ブクマ"
 date:   2017-02-28 00:00:00
 categories: portfolio
 platform: android
+skill: [kotlin, rxjava, mvp, realm]
 ---
 
 My second application in Japan is [ブクマ](https://xn--pck0dza.com/)(bukuma) for Android.

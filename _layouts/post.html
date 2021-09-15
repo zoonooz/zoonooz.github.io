@@ -26,6 +26,11 @@ layout: default
        ●
       {{ page.date | date_to_string }}
     </p>
+    <p>
+      {% for skill in page.skill %}
+      <span class="label label-skill">{{ skill }}</span>
+      {% endfor %}
+    </p>
   </div>
 </div>
 

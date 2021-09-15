@@ -4,6 +4,7 @@ title:  "🎓ひま部"
 date:   2016-01-18 00:00:00
 categories: portfolio
 platform: android
+skill: [kotlin, java, rxjava, realm, mvp, webrtc]
 ---
 
 >Himabu was shutdown and replaced by [Yay!](https://note.com/yay_official/n/n94e9e7b9f038) on 1th January 2020.

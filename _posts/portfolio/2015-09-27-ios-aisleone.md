@@ -4,6 +4,7 @@ title:  "🛍️AisleOne iPad Application"
 date:   2015-09-27 20:29:07
 categories: portfolio
 platform: ios
+skill: [objective-c]
 ---
 
 **AiselOne** is shopping application that simulates the aisle of supermarket. User can scroll left and right to browse the product and simply drag and drop the it to the cart if you want to buy or schedule to have it later.

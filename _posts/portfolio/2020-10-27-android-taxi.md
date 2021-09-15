@@ -4,6 +4,7 @@ title:  "🚕Taxi Meter Integration"
 date:   2020-10-27 00:00:00
 categories: portfolio
 platform: [android]
+skill: [kotlin, rxjava, grpc, websocket]
 ---
 
 When I was working at [Grab](https://grab.com), I got an oppurtunity to work on this innovative project to integrate the taxi and its in-vehicle system into Grab's online platform. Our main goal was to improve the taxi driver experience and make the process of using Grab Driver App with the taxi as smooth as possible.

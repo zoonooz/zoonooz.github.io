@@ -4,6 +4,7 @@ title:  "🤳Callstats.io Libraries"
 date:   2018-08-04 00:00:00
 categories: portfolio
 platform: [android,ios]
+skill: [kotlin, swift, webrtc]
 ---
 
 I helped [Callstats](https://callstats.io) to build libraries for Android and iOS to integrate with their RESTful API. Callstats collects [WebRTC](https://webrtc.org/) data, analyze and show on the dashboard so that the customers can detect anomalies and optimize their system.
