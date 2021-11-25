@@ -16,7 +16,7 @@ title: ZOONREF
             <h4><p class="post-link">{{ post.title }}</p></h4>
             <p class="subtitle">
               {% for tag in post.tag %}
-                <span class="label label-default">{{ tag }}</span>&nbsp;
+                <span class="label label-info">{{ tag }}</span>&nbsp;
               {% endfor %}
                ●
               {{ post.date | date_to_string }}</p>
