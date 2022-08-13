@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="ZOONREF | My Portfolio & Blog">
+    <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://zoonref.com/img/preview/preview.png">
+    {% if page.thumbnail %}
+    <meta property="og:image" content="{{ site.url }}{{ page.thumbnail }}">
+    {% endif %}
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <title>ZOONREF</title>
+    <title>{{ page.title }}</title>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -79,7 +81,7 @@
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-44460572-1']);
+      _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
       _gaq.push(['_trackPageview']);
 
       (function() {
