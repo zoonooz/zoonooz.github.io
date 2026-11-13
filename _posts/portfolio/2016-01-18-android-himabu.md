@@ -7,15 +7,15 @@ platform: android
 skill: [kotlin, java, rxjava, realm, mvp, webrtc]
 ---
 
->Himabu was shutdown and replaced by [Yay!](https://note.com/yay_official/n/n94e9e7b9f038) on 1th January 2020.
+> Himabu was shut down and replaced by [Yay!](https://note.com/yay_official/n/n94e9e7b9f038) on 1 January 2020.
 
-My first application here in Japan is Himabu for Android. I was working as an Android developer at [Nanameue](https://nanameue.jp/) to create this application which already exists in the iOS Appstore.
+My first application in Japan was Himabu for Android. I worked as an Android developer at [Nanameue](https://nanameue.jp/) to create the Android version of this app, which already existed on the iOS App Store.
 
-**Himabu** is the social application that focuses on students. We want them to use their free times to communicate, make new friends and have fun with other students around Japan. Students can create groups, chat, call or post something to public timeline.
+**Himabu** is a social application for students. We wanted them to use their free time to communicate, make new friends, and have fun with other students around Japan. Students can create groups, chat, call, or post to a public timeline.
 
 ![image](/img/portfolio/himabu.png)
 {: style="text-align: center;"}
 
-At first, The app was built entirely using **Java** and then I decided to rewrite everything to **Kotlin** after half year of its release as the language becomes more and more stable. The code is easier to read and because I am using RxJava everywhere, the lambda expression from Kotlin helps shorten the code a lot.
+At first, the app was built entirely in **Java**. Half a year after its release, as the language became more and more stable, I decided to rewrite everything in **Kotlin**. The code is easier to read, and because I use RxJava everywhere, Kotlin's lambda expressions shorten the code a lot.
 
-This app also supports conference call both voice and video. I created the **WebRTC** wrapper library from Google's libjingle that handle signaling and ICE for both iOS and Android app and integrated it as well.
+The app also supports both voice and video conference calls. I created a **WebRTC** wrapper library based on Google's libjingle that handles signaling and ICE for both the iOS and Android apps, and integrated it into both.

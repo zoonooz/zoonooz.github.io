@@ -6,13 +6,13 @@ categories: portfolio
 platform: ios
 ---
 
-After Apple announced that they allow developers to create custom keyboard in iOS8, I and my friend [@Gary](http://twitter.com/iamglimy) wanted to do a simple project using that API. We came up with the simple idea of calculator keyboard and call it "Keykulator".
+After Apple announced that developers could create custom keyboards in iOS 8, my friend [@Gary](http://twitter.com/iamglimy) and I wanted to do a simple project using that API. We came up with the simple idea of a calculator keyboard and called it "Keykulator".
 
 ![image](https://m1.behance.net/rendition/modules/148493749/disp/81ea7586156240bf8d0e185f7c7923a1.jpg)
 {: style="text-align: center"}
 
-While we was developing it, we alway think that Apple might reject our keyboard because of many reasons but we still had hope, so we developed the version 1 with simple function to try first and see if it can publish then we would add more features.
+While we were developing it, we kept thinking that Apple might reject our keyboard for many reasons, but we still had hope. So we built version 1 with only the basic functions to see if it could be published, planning to add more features later.
 
-Finally the keyboard got rejected and Apple said "Use of calculator in Today Widget is more appropriate".
+In the end, the keyboard was rejected, and Apple said, "Use of calculator in Today Widget is more appropriate."
 
-The keyboard was developed using Swift for UI and Text control and Objective-C for calculation. I opensource it on [Github](https://github.com/zoonooz/Keykulator) and hope it useful to anyone who are trying to make keyboard.
+The keyboard was developed using Swift for the UI and text control, and Objective-C for the calculations. I open-sourced it on [GitHub](https://github.com/zoonooz/Keykulator) and hope it is useful to anyone trying to make a keyboard.

@@ -9,19 +9,19 @@ image: /img/portfolio/nfc.jpg
 social: ['<iframe src="https://ghbtns.com/github-btn.html?user=zoonooz&repo=Android-Beam-NFC-NDEF-Push-to-Reader&type=watch&count=true" height="20" width="90" frameborder="0" scrolling="0" style="width:90px; height: 20px; margin-bottom: -6px" allowTransparency="true"></iframe>']
 ---
 
-Simple Receive NDEF message (SNEP) push from Android ICS in P2P mode with "Touch to Beam" function to ACS ACR 122u.
+Receive simple NDEF messages (SNEP) pushed from Android ICS in P2P mode via the "Touch to Beam" feature to an ACS ACR122U reader.
 
 ![image](/img/portfolio/nfc.jpg)
 {: style="text-align: center"}
 
-  * It can receive only simple text NDEF message (more than 255 bytes)
-  * Use Initiator mode to manual set LLCP connection parameters
+  * It can only receive simple text NDEF messages (more than 255 bytes)
+  * Uses Initiator mode to manually set LLCP connection parameters
 
 <br/>
 
-#####Tested on#
+##### Tested on
 
-  * ACS ACR 122U firmware 207
+  * ACS ACR122U firmware 207
   * Nexus S with Android ICS 4.0.3
 
 <br/>

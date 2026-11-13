@@ -6,47 +6,47 @@ categories: blog
 tag: [estimote,ibeacon,ios]
 ---
 
-I just got a new project which is using [Estimote](https://estimote.com/). I cannot write about the purpose of this app but I will write about what it is and example to use it.
+I just got a new project that uses [Estimote](https://estimote.com/). I can't write about the purpose of the app, but I will explain what Estimote is and show an example of how to use it.
 
-## What is Estimote Beacon ?
+## What is an Estimote Beacon?
 - - -
 
 ![](https://media.tumblr.com/90987ae16391f981ab81d8ebe4d501a1/tumblr_inline_mqvtmyR50P1qz4rgp.png)
 {: style="text-align: center"}
 
->An Estimote Beacon is a small, wireless device, sometimes also called a 'mote'. When placed in a physical space, it broadcasts tiny radio signals to smart devices.  --- from estimote website
+>An Estimote Beacon is a small, wireless device, sometimes also called a 'mote'. When placed in a physical space, it broadcasts tiny radio signals to smart devices. — from the Estimote website
 
 So basically it is a small device that broadcasts a radio signal. But what is that signal and how does it work?
 
-Estimote Beacon broadcasts signal using [Bluetooth LE](https://en.wikipedia.org/wiki/Bluetooth_low_energy) and [iBeacon](https://developer.apple.com/ibeacon/) standard which is implement using Bluetooth's Proximity sensing specification. You can think of it as a someone who keeps shouting **"Hey, I am here. My name is ..."** every second.
+An Estimote Beacon broadcasts its signal using [Bluetooth LE](https://en.wikipedia.org/wiki/Bluetooth_low_energy) and the [iBeacon](https://developer.apple.com/ibeacon/) standard, which is implemented using Bluetooth's proximity sensing specification. You can think of it as someone who keeps shouting **"Hey, I am here. My name is ..."** every second.
 
-Estimote Beacon broadcasts signal with the following significant data:
+An Estimote Beacon broadcasts the following significant data:
 
 ```
 Proximity UUID: B9407F30-F5F8-466E-AFF9-25556B57FE6D
 Major: 1234
 Minor: 5678
 ```
-**Proximity UDID** : Unique identifier of the beacon. As default, the value will be the same for all devices that comes from Estimotes but you can change it later.
+**Proximity UUID**: The unique identifier of the beacon. By default, the value is the same for all devices that come from Estimote, but you can change it later.
 
-**Major** : Most significant value of beacon. You can use it as group number.
+**Major**: The most significant value of the beacon. You can use it as a group number.
 
-**Minor** : Least significant value of beacon. You can use it as member number in group.
+**Minor**: The least significant value of the beacon. You can use it as a member number within the group.
 
 ## Development
 - - -
 
-The main concept of this app is to notify the user when the phone is close to any of Estimote devices and the notification must include the information that can indicate which device user is close to. For example, if the phone is close to area A, the phone will get the notification like "You just got into area A, Do you want to make a landmark ?".
+The main concept of this app is to notify the user when the phone is close to any of the Estimote devices, and the notification must indicate which device the user is close to. For example, if the phone is close to area A, the user will get a notification like "You just entered area A. Do you want to make a landmark?"
 
 Let's start coding.
 
 ### Setup
 
-We need to install [Estimote SDK](https://github.com/Estimote/iOS-SDK) to our project. You can see the instruction from [here](https://github.com/Estimote/iOS-SDK#installation).
+We need to install the [Estimote SDK](https://github.com/Estimote/iOS-SDK) in our project. You can find the instructions [here](https://github.com/Estimote/iOS-SDK#installation).
 
-### Permission in iOS8
+### Permission in iOS 8
 
-After you have created project and setup, the first thing you need to do if you are going to support iOS8 is request permission to use location service due to policy changed. Add the following code to anywhere depends on when you want user to see alert dialog but need to call it before using any estimote function.
+After you have created and set up the project, the first thing you need to do if you are going to support iOS 8 is to request permission to use location services, due to a policy change. Add the following code wherever you want the user to see the alert dialog, but make sure it is called before using any Estimote functions.
 
 ```objc
 // request access to location
@@ -55,15 +55,15 @@ if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorizatio
 }
 ```
 
-The reason why I used `responseToSelector` function is because `requestAlwaysAuthorization` is not available prior to iOS8. We need to check it first before calling it.
+I used `respondsToSelector:` because `requestAlwaysAuthorization` is not available prior to iOS 8, so we need to check for it before calling it.
 
-Then you have to add key `NSLocationAlwaysUsageDescription` in the **info.plist** file with the text value which user will see when alert dialog pop up.
+Then add the `NSLocationAlwaysUsageDescription` key to the **Info.plist** file, with a text value that the user will see when the alert dialog pops up.
 
-Do not forget to create `locationManager` as a instance property otherwise, the alert box will disappear before you can take any action, because the `locationManager` object get released at the end of the function.
+Do not forget to create `locationManager` as an instance property; otherwise, the alert box will disappear before you can take any action, because the `locationManager` object gets released at the end of the function.
 
 ### Area Definition
 
-Next we are going to create `Area` class to hold our beacon informations.
+Next, we are going to create an `Area` class to hold our beacon information.
 
 ```objc
 @interface Area : NSObject
@@ -75,13 +75,13 @@ Next we are going to create `Area` class to hold our beacon informations.
 
 @end
 ```
-**id** : The ID of the area, we will use it for reference later.
+**id**: The ID of the area. We will use it for reference later.
 
-**name** : Name of Area.
+**name**: The name of the area.
 
-**estimoteMajor and estimoteMinor** : The values that can indicate which device associate with this area.
+**estimoteMajor and estimoteMinor**: The values that indicate which device is associated with this area.
 
-Next step is to create list of areas in `viewDidLoad` of the root ViewController. For example, we have 3 areas to notify.
+The next step is to create a list of areas in `viewDidLoad` of the root view controller. In this example, we have 3 areas.
 
 ```objc
 // create areas
@@ -108,7 +108,7 @@ self.areas = @[areaA,areaB,areaC];
 
 ### Start Monitoring
 
-We will use class `ESTBeaconManager` to manage all of our Estimote Beacon tasks and use class `ESTBeaconRegion` to define which region we want to monitor. Put the following code in `viewDidLoad`.
+We will use the `ESTBeaconManager` class to manage all of our Estimote Beacon tasks and the `ESTBeaconRegion` class to define which region we want to monitor. Put the following code in `viewDidLoad`.
 
 ```objc
 self.beaconManager = [[ESTBeaconManager alloc] init];
@@ -118,9 +118,9 @@ self.beaconRegion = [[ESTBeaconRegion alloc] initWithProximityUUID:ESTIMOTE_PROX
 [self.beaconManager startMonitoringForRegion:self.beaconRegion];
 ```
 
-`ESTIMOTE_PROXIMITY_UUID` is a fixed UDID for all Estimote Beacon device. If you happen to change it, you have to change this value to match with yours.
+`ESTIMOTE_PROXIMITY_UUID` is a fixed UUID for all Estimote Beacon devices. If you have changed it, you need to change this value to match yours.
 
-Then implement `ESTBeaconManager` delegate:
+Then implement the `ESTBeaconManager` delegate:
 
 ```objc
 #pragma mark - ESTBeaconManager delegate
@@ -142,13 +142,13 @@ Then implement `ESTBeaconManager` delegate:
 }
 ```
 
-Method `startMonitoringForRegion:` is working even the app is in background state but not when you kill the app.
+The `startMonitoringForRegion:` method works even when the app is in the background, but not after you kill the app.
 
-Now we will get notification when the phone is close to one of those 3 areas and also when exit the area *(please note that the exit delegate will get called after 30 second)*. But wait, How can we know that we got into which area, A, B or C. The solution is we have to use another method that is `startRangingBeaconsInRegion:` but we will get new problem, this method does not support in background mode.
+Now we will get a notification when the phone is close to one of those 3 areas, and also when it leaves the area *(please note that the exit delegate method is called after 30 seconds)*. But wait, how can we know which area we entered: A, B, or C? We have to use another method, `startRangingBeaconsInRegion:`, but that brings a new problem: this method does not work in background mode.
 
-The solution is we will use `startMonitoringForRegion:` first and after `beaconManager:didEnterRegion:` get called, we have 5 seconds that iOS allow the app to execute code in background. With that 5 seconds we will use `startRangingBeaconsInRegion:` to get which beacon device we are close to.
+The solution is to use `startMonitoringForRegion:` first. After `beaconManager:didEnterRegion:` is called, iOS allows the app to execute code in the background for 5 seconds. Within those 5 seconds, we use `startRangingBeaconsInRegion:` to find out which beacon device we are close to.
 
-The delegate code will be like this:
+The delegate code will look like this:
 
 ```objc
 #pragma mark - ESTBeaconManager delegate
@@ -172,7 +172,7 @@ The delegate code will be like this:
 
     if (detectedArea) {
         UILocalNotification *notification = [UILocalNotification new];
-        notification.alertBody = [NSString stringWithFormat:@"You just enter %@. Do you want to make a landmark ?",detectedArea.name];
+        notification.alertBody = [NSString stringWithFormat:@"You just entered %@. Do you want to make a landmark?",detectedArea.name];
 
         [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
         [self.beaconManager stopRangingBeaconsInRegion:self.beaconRegion];
@@ -180,7 +180,7 @@ The delegate code will be like this:
 }
 ```
 
-Now when the app is in the background or the phone is locked, we will get notification with the area name.
+Now, when the app is in the background or the phone is locked, we will get a notification with the area name.
 
 ![image](/img/blog/estimote.jpg)
 {: style="text-align: center"}
@@ -188,4 +188,4 @@ Now when the app is in the background or the phone is locked, we will get notifi
 ## Conclusion
 - - -
 
-With Estimote Device and iBeacon, we can use it to empower ideas based on indoor location or proximity such as Retail Shop that will notify user about the promotion when you are close to the product or [Check-in app](https://github.com/panicinc/PunchClock).
+With Estimote devices and iBeacon, we can power ideas based on indoor location or proximity, such as a retail shop that notifies users about promotions when they are close to a product, or a [check-in app](https://github.com/panicinc/PunchClock).

@@ -1,0 +1,13 @@
+<div class="col-lg-4 col-md-6 card-col">
+  <a class="card" href="{{ include.post.url }}">
+    <h4 class="post-link">{{ include.post.title }}</h4>
+    <p class="subtitle">
+      {% if include.post.categories contains "portfolio" %}
+        {% include platform-labels.html platforms=include.post.platform %}
+      {% else %}
+        {% for tag in include.post.tag %}<span class="label label-tag">{{ tag }}</span>{% endfor %}
+      {% endif %}
+      <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date_to_string }}</time>
+    </p>
+  </a>
+</div>

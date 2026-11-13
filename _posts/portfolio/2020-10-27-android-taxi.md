@@ -7,21 +7,23 @@ platform: [android]
 skill: [kotlin, rxjava, grpc, websocket]
 ---
 
-When I was working at [Grab](https://grab.com), I got an oppurtunity to work on this innovative project to integrate the taxi and its in-vehicle system into Grab's online platform. Our main goal was to improve the taxi driver experience and make the process of using Grab Driver App with the taxi as smooth as possible.
+When I was working at [Grab](https://grab.com), I had the opportunity to work on an innovative project to integrate taxis and their in-vehicle systems into Grab's online platform. Our main goal was to improve the taxi driver experience and make using the Grab Driver app in a taxi as smooth as possible.
 
-Imagine if you are a Grab Driver driving taxi, you have to do the followings step:
-1. You accepted the job, you have to manually set the rooftop to "on call".
-2. You picked up the passenger, you start the meter and then you have to manually start the trip in the app.
-3. You arrived at the destination, you stop the meter then you have to manually stop the trip in the app and then key in the breakdown fare.
+Imagine you are a Grab driver driving a taxi. You have to do the following steps:
 
-After the integration, you have to do just:
+1. When you accept a job, you have to manually set the rooftop sign to "on call".
+2. When you pick up the passenger, you start the meter, and then you have to manually start the trip in the app.
+3. When you arrive at the destination, you stop the meter, then you have to manually end the trip in the app and key in the fare breakdown.
+
+After the integration, all you have to do is:
+
 1. Accept the job.
-2. Pick up the passenger then start the meter.
-3. Arrive at destination then stop the meter.
+2. Pick up the passenger and start the meter.
+3. Arrive at the destination and stop the meter.
 
-Since taxi meter, rooftop sign and other in-vahicle hardware devices are integrated with Grab system, we know when to start the trip, update the rooftop sign and so on. This improves Grab driver's experience a lot. 
+Since the taxi meter, rooftop sign, and other in-vehicle hardware are integrated with Grab's system, we know when to start the trip, update the rooftop sign, and so on. This improves the Grab driver experience a lot.
 
-I worked with the team and vendors to deploy customized Android OS and Grab application into hundreds of taxi in Singapore.
+I worked with the team and vendors to deploy a customized Android OS and the Grab application to hundreds of taxis in Singapore.
 
 <br/>
 <center>

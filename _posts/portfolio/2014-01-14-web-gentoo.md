@@ -6,7 +6,7 @@ categories: portfolio
 platform: web
 ---
 
-Coolmessenger is a website that show the information about product, price and has a simple user management setting page. The customer wanted to redesign the website so my responsibility was translated the design from designer into HTML, CSS and JavaScript.
+Coolmessenger is a website that shows product and pricing information and has a simple user management settings page. The client wanted to redesign the website, and my responsibility was to translate the designer's work into HTML, CSS, and JavaScript.
 
 ![image](/img/portfolio/gentoo.png)
 {: style="text-align: center"}

@@ -6,9 +6,9 @@ categories: portfolio
 platform: mac
 ---
 
-My company was doing marketing campaign for [Directbox](http://directcloud.net/) and building a booth at [CommunicAsia](http://www.communicasia.com/) in Singapore 17-20 June. My boss want to have the mirror that can automatically snap photo when the user smiling and then print out the photo using [DirectPrint](http://directcloud.net/direct-cloud/) feature at this booth.
+My company was running a marketing campaign for [Directbox](http://directcloud.net/) and building a booth at [CommunicAsia](http://www.communicasia.com/) in Singapore from 17 to 20 June. My boss wanted a mirror that could automatically snap a photo when someone smiled and then print it out at the booth using the [DirectPrint](http://directcloud.net/direct-cloud/) feature.
 
-The app made on OSX platform and use ```CIDetector``` class in standard OSX library to make this happen. It connected with external webcam for high resolution photo and Adruino for showing led indicator before it snap.
+The app was built for OS X and uses the `CIDetector` class from the standard OS X library to make this happen. It connected to an external webcam for high-resolution photos and to an Arduino that lit up an LED indicator before each snap.
 
 ![image](/img/portfolio/selfie.jpg)
 {: style="text-align: center"}

@@ -4,16 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="{{ page.title }}">
+    <meta name="theme-color" content="#1b2025">
+    <meta name="description" content="Amornchai Kanokpullwad — software engineer building mobile apps. Portfolio and blog.">
+    <meta property="og:title" content="{{ page.title | default: site.name }}">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     {% if page.thumbnail %}
     <meta property="og:image" content="{{ site.url }}{{ page.thumbnail }}">
     {% endif %}
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16.png">
+    <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png">
 
-    <title>{{ page.title }}</title>
+    <title>{% if page.layout == "post" %}{{ page.title }} | {{ site.name }}{% else %}{{ page.title | default: site.name }}{% endif %}</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -21,15 +29,6 @@
     <!-- Custom styles for this template -->
     <link href="/css/main.css" rel="stylesheet">
     <link href="/css/syntax.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -38,22 +37,20 @@
       <nav class="navbar container">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">
-              <b>ZOONREF</b>
-            </a>
+            <a class="navbar-brand" href="/">ZOONREF</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="main-nav">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/blog">blog</a></li>
-              <li><a href="/portfolio">portfolio</a></li>
+              <li{% if page.url contains "/blog" %} class="active"{% endif %}><a href="/blog">blog</a></li>
+              <li{% if page.url contains "/portfolio" %} class="active"{% endif %}><a href="/portfolio">portfolio</a></li>
               <li><a href="mailto:zoonref@gmail.com">contact</a></li>
               <li class="collapse-hide"><a class="glyphicon glyphicon-signal" aria-hidden="true"></a></li>
             </ul>
@@ -63,13 +60,13 @@
     </div>
 
     <div id="wrap">
-      <div id="main">
+      <main id="main">
         {{ content }}
-      </div>
+      </main>
     </div>
 
     <footer class="footer">
-      <p class="text-center">Made with ❤️ by <b>Amornchai Kanokpullwad</b></p>
+      <p class="text-center">Made with ❤️ by <b>Amornchai Kanokpullwad</b> · © {{ site.time | date: "%Y" }}</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -86,6 +83,6 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', '{{ site.google_analytics }}');
-  </script>
+    </script>
   </body>
 </html>

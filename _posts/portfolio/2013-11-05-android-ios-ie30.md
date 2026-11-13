@@ -6,12 +6,12 @@ categories: portfolio
 platform: [android,ios]
 ---
 
-I was working with one designer and one developer at Dezainwerkz to build these application for celebrate IE Singapore 30th Anniversary and tell about Singapore's globalisation journey.
+I worked with a designer and another developer at Dezainwerkz to build these applications to celebrate IE Singapore's 30th anniversary and tell the story of Singapore's globalisation journey.
 
 ![image](/img/portfolio/ie30.jpg)
 {: style="text-align: center"}
 
-The app mainly is telling the story including sounds, videos and news feed. My responsibility is design the structure, coding and make the interaction that designed by designer possible.
+The app mainly tells the story through sounds, videos, and a news feed. My responsibilities were designing the app structure, coding, and bringing the designer's interactions to life.
 
 ![image](/img/portfolio/ie30-2.jpg)
 {: style="text-align: center"}

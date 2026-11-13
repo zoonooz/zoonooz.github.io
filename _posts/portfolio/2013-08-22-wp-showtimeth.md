@@ -6,9 +6,9 @@ categories: portfolio
 platform: windows
 ---
 
-When I was using Nokia Lumia 520, I could not find the app that can show movies showtime of my favorite cinema. So I made this app for that.
+When I was using a Nokia Lumia 520, I could not find an app that showed movie showtimes for my favorite cinema, so I made one.
 
 ![image](/img/portfolio/showtimeth.jpg)
 {: style="text-align: center"}
 
-The app can store the favorite cinemas for easier to check in next time.
+The app can save your favorite cinemas so they are easier to check next time.

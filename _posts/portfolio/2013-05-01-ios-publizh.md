@@ -8,14 +8,14 @@ platform: ios
 image: /img/portfolio/publizh.jpg
 ---
 
-When I was working at Apptividia, I had to rewrite and refactor old unfinish ios code from the ground up of the main product of the company called **Publizh**. Publizh is a platform for Interactive e-book available in Android and iOS. The customer can create the interactive spot in any page of PDF such as video, sound, 3D image viewer and much more using the web-base application and read it in all platform.
+When I was working at Apptividia, I rewrote and refactored the old, unfinished iOS code of the company's main product, **Publizh**, from the ground up. Publizh is an interactive e-book platform available on Android and iOS. Customers can add interactive spots to any page of a PDF, such as videos, sounds, 3D image viewers, and much more, using a web-based application, and then read the result on any platform.
 
 ![image](/img/portfolio/publizh1.jpg)
 {: style="text-align: center"}
 
-The app also has a shelf for download, update version and delete books.
+The app also has a shelf for downloading, updating, and deleting books.
 
-These were many apps that used this platform and published on the Apple Store while I was working there.
+Many apps built on this platform were published on the App Store while I was working there.
 
 ![image](/img/portfolio/publizh2.jpg)
 {: style="text-align: center"}

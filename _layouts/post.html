@@ -2,46 +2,32 @@
 layout: default
 ---
 
-<div class="row top-space">
-  <div class="col-lg-12">
-  	<h1 class="">{{ page.title }}</h1>
+<article class="post">
+  <header class="post-header top-space">
+    <h1>{{ page.title }}</h1>
     <p class="subtitle">
-      {% for platform in page.platform %}
-        {% if platform == "android" %}
-        <span class="label label-success">
-        {% elsif platform == "ios" or platform == "mac" %}
-        <span class="label label-default">
-        {% elsif platform == "windows" %}
-        <span class="label label-primary">
-        {% elsif platform == "line" %}
-        <span class="label label-line">
-        {% elsif platform == "web" %}
-        <span class="label label-warning">
-        {% endif %}
-          {{ platform }}</span>&nbsp;
-      {% endfor %}
+      {% if page.categories contains "portfolio" %}
+        {% include platform-labels.html platforms=page.platform %}
+      {% else %}
+        {% for tag in page.tag %}<span class="label label-tag">{{ tag }}</span>{% endfor %}
+      {% endif %}
       {% for social in page.social %}
         {{ social }}
       {% endfor %}
-       ●
-      {{ page.date | date_to_string }}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
     </p>
-    <p>
-      {% for skill in page.skill %}
-      <span class="label label-skill">{{ skill }}</span>
-      {% endfor %}
+    {% if page.skill %}
+    <p class="skills">
+      {% for skill in page.skill %}<span class="label label-skill">{{ skill }}</span>{% endfor %}
     </p>
-  </div>
-</div>
+    {% endif %}
+  </header>
 
-<div class="row top-space">
-  <div class="col-lg-12">
+  <div class="post-content">
     {{ content }}
   </div>
-</div>
 
-<div class="row extra-top-space">
-  <div class="col-lg-12">
+  <div class="post-share extra-top-space">
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -53,30 +39,23 @@ layout: default
     <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" style="line-height: 11px;margin-right: 10px;">
     </div>
     <span>
-      <a href="https://twitter.com/share" class="twitter-share-button" >Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </span>
   </div>
 
-</div>
+  <div class="post-comments top-space">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'zoonref';
+        var disqus_title = '{{ page.title | escape }}';
 
-<div class="row top-space">
-  <div class="col-lg-12">
-    <div id="disqus_thread" style="margin-top: 30px"></div>
-      <script type="text/javascript">
-          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-          var disqus_shortname = 'zoonref'; // required: replace example with your forum shortname
-          var disqus_title = '{{ page.title }}';
-
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-</div>
+</article>

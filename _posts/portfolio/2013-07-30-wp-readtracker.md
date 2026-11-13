@@ -6,12 +6,12 @@ categories: portfolio
 platform: windows
 ---
 
-ReadTracker is my second Windows Phone application that I made in my freetime. The app tracks the pages that you read on your books. It is like a bookmark but in the mobile app.
+ReadTracker is my second Windows Phone application, which I made in my free time. The app tracks the pages you've read in your books. It's like a bookmark, but in a mobile app.
 
 ![image](/img/portfolio/readtracker1.jpg)
 {: style="text-align: center"}
 
-The app can capture your books cover and search isbn in the google to fetch the books information and can show your read progress on live tiles.
+The app can capture your book covers, search Google by ISBN to fetch book information, and show your reading progress on live tiles.
 
 ![image](/img/portfolio/readtracker2.jpg)
 {: style="text-align: center"}
